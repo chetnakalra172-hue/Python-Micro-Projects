@@ -1,0 +1,22 @@
+# PROJECT 1: CAMPUS PLACEMENT ELIGIBILITY CHECKER
+print("--- 🎓 Welcome to the 2CE78 Placement Portal ---")
+
+# Step 1: Gather raw student information
+student_name = input("Enter your name: ")
+current_cgpa = float(input("Enter your current CGPA (e.g. 8.5): "))
+
+print("\n--- 📊 Processing Eligibility Profile... ---")
+
+# Step 2: Define logic rules for placement tiers
+if current_cgpa >= 8.0:
+    print(f"🎉 Congratulations {student_name}!")
+    print("✅ Eligible Tier: Elite Product Companies (15 LPA - 1 Cr+ package bracket).")
+elif current_cgpa >= 7.0:
+    print(f"👍 Good job {student_name}!")
+    print("✅ Eligible Tier: High-Growth Mass Recruiters & Startups (5 LPA - 12 LPA).")
+else:
+    print(f"⚠️ Hello {student_name}, your profile requires attention.")
+    print("❌ Criteria Alert: Current CGPA is below the standard corporate cutoff (7.0).")
+    print("💡 Next Step: Focus on upgrading college internal metrics this semester!")
+
+print("\n--- Processing Complete ---")
