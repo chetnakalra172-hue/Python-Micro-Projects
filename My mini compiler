@@ -1,0 +1,16 @@
+# PROJECT 2: MY MINI-COMPILER (LEXICAL TOKENIZER)
+print("--- 🤖 Welcome to My Mini-Compiler Engine ---")
+
+# 1. यूजर से कोड की एक लाइन इनपुट लेना
+user_code = input("Enter a math equation (e.g. x = 10 + 20): ")
+
+print("\n--- 🧠 Compiling and Tokenizing... ---")
+
+# 2. .split() फ़ंक्शन का उपयोग करके शब्दों को अलग करना (Tokens बनाना)
+tokens = user_code.split()
+
+# 3. आउटपुट दिखाना
+print(f"✅ Lexer Success! Generated Tokens: {tokens}")
+print(f"🔢 Total Tokens Found in Architecture: {len(tokens)}")
+
+print("--- Compilation Phase 1 Complete ---")
