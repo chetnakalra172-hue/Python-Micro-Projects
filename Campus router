@@ -1,0 +1,24 @@
+# PROJECT 3: AUTOMATED CAMPUS BUS ROUTER
+print("--- 🗺️ Welcome to the Smart Campus Router ---")
+
+# A Python Dictionary maps locations to paths instantaneously
+campus_map = {
+    "main_gate": "Take the Central Corridor shuttle directly to Block A.",
+    "l114": "Exit left, cross the open lawn to reach the Central Labs.",
+    "lab_221": "Take the central stairs down to reach Room 122A.",
+    "library": "Follow the ring road shuttle directly to the Student Hostel."
+}
+
+# Gather the user input query
+user_loc = input("Where are you on campus? (main_gate / l114 / lab_221 / library): ").strip().lower()
+
+print("\n--- 🧠 Calculating Optimal Routing Path... ---")
+
+# Look up the data instantaneously inside our map structure
+if user_loc in campus_map:
+    print(f"✅ Route Found: {campus_map[user_loc]}")
+else:
+    print("❌ Error: Selected location node is not mapped in this architecture.")
+
+print("--- Routing Execution Complete ---")
+
